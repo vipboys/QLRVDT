@@ -1,0 +1,253 @@
+
+ul li {
+  list-style:none;
+}
+body{
+    font-family: 'Ubuntu Condensed', sans-serif
+}
+#header_top {
+  background:	black;
+}
+.nav-pills li a{
+    color: gray;
+}
+.header_middle{
+    padding-bottom: 25px;
+    padding-top: 25px;	   
+}
+.header-middle .container .row {
+  border-bottom: 1px solid #f5f5f5;
+  margin-left: 0;
+  margin-right: 0;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.header-middle .container .row .col-sm-4{
+  padding-left: 0;
+}
+
+.header-middle .container .row .col-sm-8 {
+	padding-right:0;
+}
+.product text-center{
+    overflow: hidden;
+}
+#footer{
+background:	 none repeat scroll 0 0 #F0F0E9;
+border: 2px solid #F7F7F0;
+}
+/*
+.product-image-wrapper{
+    margin: 5px;
+ border: 2px solid #F7F7F0;
+    border-radius: 2px;
+}
+*/
+h2{
+    font-family: abel;
+}
+
+.category li a{
+    color: gray;
+    border-bottom: 1px solid gray;
+    padding-right: 2%;
+}
+.detail{
+    background: gray;
+    border: 0 none;
+    border-radius: 2px;
+    color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.infor-us{
+    border-right: 1px solid gray;
+}
+.infor-us h2 span{
+    color: burlywood;
+}
+.infor-us h2{
+color: #B4B1AB;
+}
+.contact{
+    border-right: 1px solid gray;
+}
+.contact h2{
+    color: #B4B1AB;
+}
+.address{
+        border-right: 1px solid gray;
+}
+.address h2{
+     color: #B4B1AB;
+    
+}
+.footer_bottom{
+     background:	 none repeat scroll 0 0 #D6D6D0;
+}
+.container text-center{
+  color: #B4B1AB;
+}
+.product-box{
+    border: 0px solid #F7F7F0;
+    position: relative;
+    overflow: hidden;
+    margin: 5px;
+    margin-left: 27px;
+   
+    background: white;
+  
+   
+
+}
+.product-box img{
+    float: left;
+    height: 70px;
+    width: 70px;
+    margin: 8px;
+  
+   
+}
+.product-detail{
+    width: 225px;
+    position: absolute;
+    bottom: 0px;
+    height: 0%;
+    text-align: center;
+    background: -webkit-linear-gradient(top,rgba(0,0,0,1),rgba(0,0,0,0.3));
+       background: -moz-linear-gradient(top,rgba(0,0,0,1),rgba(0,0,0,0.3));
+       background: -o-linear-gradient(top,rgba(0,0,0,1),rgba(0,0,0,0.3));
+       background: -ms-linear-gradient(top,rgba(0,0,0,1),rgba(0,0,0,0.3));
+    opacity: 0;
+    transition: height 500ms ease 0s;
+} 
+.product-box:hover {
+    border: 0px solid #FF4500;
+    color: white;
+    opacity: 1;
+    background: #D6D6D0; 
+    background:  #D6D6D0;
+    background: #D6D6D0;
+    background:  #D6D6D0;
+
+}
+.product-detail h1{
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+}
+.product-detail p{
+    color: white;
+    padding: 5px;
+    text-shadow: 1px 1px 1px black;
+    text-align: justify;
+}
+.product-box h4{
+    text-align: left;
+    color: black;
+
+}
+.product-box p{
+text-align: left;
+width: 200px;
+float: left;
+}
+.product-list{
+    border-left: 2px solid #D7D7D7;
+    
+}
+.menu-left{
+    background: gray;
+}
+h4{
+    font-family: -webkit-pictograph;
+}
+body{
+   background-color: #ddd;
+}
+
+.menu-category{
+    margin-left: -20px;
+}
+.category li.active a{
+    background: #222;
+    border-radius: 1px;
+}
+.list-button{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.main-tain{ 
+}
+/*.each-product{
+    background: white;
+}*/
+.title-productvien{
+    background-color:dimgrey;
+    color: white;
+    
+    
+}
+.title-product h3{
+        padding-left: 10px! important;
+    position: relative;
+    font-size: 1.1em;
+}
+.flip{
+    height: 199px;
+    width: 300px;
+    margin: 0px;
+    
+}
+.flip img{
+    width: 300px;
+    height: auto;
+    
+}
+.flip .back{
+    background: -webkit-linear-gradient(top,rgba(0,0,0,1),rgba(0,0,0,0.3));
+       background: -moz-linear-gradient(top,rgba(0,0,0,1),rgba(0,0,0,0.3));
+       background: -o-linear-gradient(top,rgba(0,0,0,1),rgba(0,0,0,0.3));
+       background: -ms-linear-gradient(top,rgba(0,0,0,1),rgba(0,0,0,0.3));
+    color: #fff;
+    text-align: center;
+}
+.supply{
+    border-radius: 1px;
+}
+.glyphicon-trash{
+    color:  red;
+}
+.container-fluid{
+    margin-top: 20px;
+}
+post-productvien{
+    background-color:darkgray;
+
+}
+
+.form-group input:hover {
+    border: 1px solid ;
+    color: #337ab7;
+    opacity: 1;
+    background: #D6D6D0; 
+    background:  #D6D6D0;
+    background: #D6D6D0;
+    background:  #D6D6D0;
+
+}
+/*.product-list{
+    margin-top: 5px;
+}*/
+
+.custom-search-form{ 
+    margin-top: 3px;
+
+}
+.navbar-inverse{
+    
+    margin-right: 38px;}

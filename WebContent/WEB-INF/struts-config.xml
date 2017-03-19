@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts 
+Configuration 1.3//EN" "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+<struts-config>
+	<form-beans>
+		<!-- <form-bean name="nguoiDungForm" type="form.NguoiDungForm" /> -->
+		<form-bean name="AdminForm" type="form.AdminForm"/>
+		<form-bean name="AdminFormQLTK" type="form.AdminFormQLTK"/>
+		<form-bean name="AdminFormDTM" type="form.AdminFormDTM"/>
+		<form-bean name="AdminFormQLBD" type="form.AdminFormQLBD"/>
+		<form-bean name="AdminFormTK" type="form.AdminFormTK"/>
+		<form-bean name="AdminFormPDBD" type="form.AdminFormPDBD"/>
+		<form-bean name="AdminFormCN" type="form.AdminFormCN"/>
+		<form-bean name="AdminFormTS" type="form.AdminFormTS"/>
+		<form-bean name="AdminFormTG" type="form.AdminFormTG"/>
+		<form-bean name="DangXuatForm" type="form.DangXuatForm"/>
+		<form-bean name="DetailPostForm" type="form.DetailPostForm" />
+		<form-bean name="PrivateQLBDForm" type="form.PrivateQLBDForm"/>
+		<form-bean name="PrivateTBDForm" type="form.PrivateTBDForm"/>
+		<form-bean name="PrivateDSBDYTForm" type="form.PrivateDSBDYTForm"/>
+		<form-bean name="PrivateTBForm" type="form.PrivateTBForm"/>
+		<form-bean name="PrivateDSBDCPDForm" type="form.PrivateDSBDCPDForm"/>
+		<!-- ===========LAM============= -->
+		<form-bean name="IndexForm" type="form.IndexForm" />
+		<!-- ===========END LAM============= -->
+	</form-beans>
+	<action-mappings>
+		<!-- <action input="/dangNhap.jsp" name="nguoiDungForm"
+			path="/dang-nhap" scope="request" type="action.NguoiDungAction">
+			<forward name="thanhCong" path="/danh-sach.do" redirect="true"/>
+			<forward name="thatBai" path="/dangNhap.jsp" />
+		</action> -->
+		
+		<action path="/privateQLBD" name="PrivateQLBDForm" scope="request" type="action.PrivateQLBDAction">
+			<forward name="thanhCong" path="/privateQLBD.jsp" />
+			<forward name="thatBai" path="/index.do" redirect="true"/>
+		</action>
+		
+		<action path="/privateTBD" name="PrivateTBDForm" input="/privateTBD.jsp" scope="request" type="action.PrivateTBDAction">
+			<forward name="thanhCong" path="/privateDSBDCPD.do" />
+			<forward name="thatBai" path="/privateTBD.jsp" />
+		</action>
+		
+		<action path="/privateDSBDYT" name="PrivateDSBDYTForm" input="/privateDSBDYT.jsp" scope="request" type="action.PrivateDSBDYTAction">
+			<forward name="thanhCong" path="/privateDSBDYT.jsp" />
+			<forward name="thatBai" path="/privateDSBDYT.jsp" />
+		</action>
+		
+		<action path="/privateTB" name="PrivateTBForm" input="/privateTB.jsp" scope="request" type="action.PrivateTBAction">
+			<forward name="thanhCong" path="/privateTB.jsp" />
+			<forward name="thatBai" path="/privateTB.jsp" />
+		</action>
+		
+		<action path="/privateDSBDCPD" name="PrivateDSBDCPDForm" input="/privateDSBDCPD.jsp" scope="request" type="action.PrivateDSBDCPDAction">
+			<forward name="thanhCong" path="/privateDSBDCPD.jsp" />
+			<forward name="thatBai" path="/privateDSBDCPD.jsp" />
+		</action>
+		
+		<!-- ====================ADMIN========================== -->
+		<action path="/admin" name="AdminForm" input="/index.jsp" scope="request" type="action.AdminAction">
+			<forward name="thanhCong" path="/admin.jsp"></forward>
+			<forward name="thatBai" path="/index.jsp"></forward>
+		</action>
+		
+		<action path="/adminQLTK" name="AdminFormQLTK" input="/admin_QLTK.jsp" scope="request" type="action.AdminActionQLTK">
+			<forward name="thanhCong" path="/admin_QLTK.jsp"></forward>
+			<forward name="thatBai" path="/admin_QLTK.jsp"></forward>
+		</action>
+		
+		<action path="/adminDTM" name="AdminFormDTM" input="/admin_DTM.jsp" scope="request" type="action.AdminActionDTM">
+			<forward name="thanhCong" path="/adminQLBD.do"></forward>
+			<forward name="thatBai" path="/admin_DTM.jsp"></forward>
+		</action>
+		
+		<action path="/adminQLBD" name="AdminFormQLBD" input="/index.jsp" scope="request" type="action.AdminActionQLBD">
+			<forward name="thanhCong" path="/admin_QLBD.jsp"></forward>
+			<forward name="thatBai" path="/index.do"></forward>
+		</action>
+		
+		<action path="/adminTK" name="AdminFormTK" input="/index.jsp" scope="request" type="action.AdminActionTK">
+			<forward name="thanhCong" path="/admin_TK.jsp"></forward>
+			<forward name="thatBai" path="/index.do"></forward>
+		</action>
+		
+		<action path="/adminPDBD" name="AdminFormPDBD" input="/index.jsp" scope="request" type="action.AdminActionPDBD">
+			<forward name="thanhCong" path="/admin_PDBD.jsp"></forward>
+			<forward name="thatBai" path="/index.do"></forward>
+		</action>
+		
+		<action path="/adminCN" name="AdminFormCN" input="/index.jsp" scope="request" type="action.AdminActionCN">
+			<forward name="thanhCong" path="/admin_CN.jsp"></forward>
+			<forward name="thatBai" path="/index.do"></forward>
+		</action>
+		
+		<action path="/adminTS" name="AdminFormTS" input="/index.jsp" scope="request" type="action.AdminActionTS">
+			<forward name="thanhCong" path="/admin_TS.jsp"></forward>
+			<forward name="thatBai" path="/index.do"></forward>
+		</action>
+		
+		<action path="/adminTG" name="AdminFormTG" input="/index.jsp" scope="request" type="action.AdminActionTG">
+			<forward name="thanhCong" path="/admin_TG.jsp"></forward>
+			<forward name="thatBai" path="/index.do"></forward>
+		</action>
+		
+		<!-- ===========LAM============= -->
+		<action path="/index" name="IndexForm" input="/index.jsp" scope="request" type="action.IndexAction">
+			<forward name="thanhCong" path="/index.jsp" />
+			<forward name="thatBai" path="/index.jsp"/>			
+		</action>
+		<action path="/detailpost" name="DetailPostForm" input="/index.jsp" scope="request" type="action.DetailPostAction" >
+			<forward name="thanhCong" path="/detailPost.jsp"/>
+			<forward name="thatBai" path="/index.do"/>
+			<forward name="thatBaiLogin" path="/detailPost.jsp"/>
+		</action>
+		<!-- ===============END LAM================== -->		
+		<action path="/dangxuat" name="DangXuatForm" scope="request" type="action.DangXuatAction" >
+			<forward name="thanhCong" path="/index.do" />
+		</action>
+		
+	</action-mappings>
+
+	<message-resources parameter="action.ApplicationResources" />
+
+</struts-config>
+

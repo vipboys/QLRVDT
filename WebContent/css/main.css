@@ -1,0 +1,92 @@
+/* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbarLam {
+      margin-bottom: 0;
+      border-radius: 0;
+      background-color: #11252f;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.contentLam {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenavLam {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenavLam {
+        height: auto;
+        padding: 15px;
+      }
+      .row.contentLam {height:auto;} 
+    }
+
+    .affix {
+      top: 0;
+      width: 100%;
+    }
+
+    .affix + .container-fluid {
+        padding-top: 70px;
+    }
+
+    #formDangNhap {
+        width: auto;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 3px;
+        padding-bottom: 15px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    #pnThongKe {
+      text-align: left;
+    }
+
+    #soLieu {
+      text-align: right;
+      font-weight: bold;
+      width: 100px;
+      padding: 5px;
+    }
+
+    #tieuDe {
+      width: 200px;
+    }
+
+    #menuChinh {
+      text-align: center;
+      padding-top: 15px;
+      background-color:#183544;
+      color:#fff;
+      height:auto;
+      padding-bottom: 15px;
+      margin-bottom: 15px;
+    }
+
+    #spanTitle {
+      background-color:#183544;
+      padding-top: 5px;
+      padding-bottom: 10px;
+      padding-left: 120px;
+      border-style: solid;
+      border-width: 1px 0px 0px 0px;
+      border-color: #f37021;
+      font-size: 20px;
+    }
+
+    .menuTop {
+      color: #f37021;
+    }
